@@ -2494,6 +2494,7 @@ footer {
 	padding-bottom: 3rem;
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
+	text-align: center;
 }
 footer a, footer a:visited {
 	color: #FFFFFF;
