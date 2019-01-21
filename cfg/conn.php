@@ -1,10 +1,10 @@
 <?php
 
-$dbServer = "localhost";
+$dbServer = "localhost:3306";
 $dbUser = "root";
 $dbPass = "ziggymysql23"
-$dbname = "users"
+$dbName = "users"
 
-$conn = mysqli_connect($dbServer, $dbUser, $dbPass, $dbname);
+$conn = mysqli_connect($dbServer, $dbUser, $dbPass, $dbName);
 
 ?>
