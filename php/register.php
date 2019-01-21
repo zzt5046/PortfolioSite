@@ -49,7 +49,7 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="registerForm" id="registerForm" method="post" action="registerBackend.php">
+            <form name="registerForm" id="registerForm" method="POST" action="registerBackend.php">
       			<fieldset>
 
                   <div class="form-field">
@@ -63,7 +63,7 @@
 	               </div>
 
                  <div class="form-field">
-                     <button class="submitform">Submit</button>
+                     <button class="submitform" name="submit">Submit</button>
                      <div id="submit-loader">
                         <div class="text-loader">Loading...</div>                             
        				      <div class="s-loader">
