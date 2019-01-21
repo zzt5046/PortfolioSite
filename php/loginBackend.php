@@ -7,8 +7,7 @@
 
 	$lookup = mysqli_query($conn, "SELECT * FROM phpaccess WHERE username='$user' 
 										AND password='$pass';");
-	echo $lookupPass;
-	exit();
+
 	if(mysqli_num_rows($lookup) == 1){
 
 		header("Location: functions.php?login=success"); /* Redirect browser */
