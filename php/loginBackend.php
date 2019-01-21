@@ -5,10 +5,11 @@
 	$user = $_POST['user'];
 	$pass = $_POST['pass'];
 
-	$lookupPass = mysqli_query($conn, "SELECT password FROM phpaccess WHERE username='$user';");
+	$lookup = mysqli_query($conn, "SELECT * FROM phpaccess WHERE username='$user' 
+										AND password='$pass';");
 	echo $lookupPass;
 	exit();
-	if($pass == $lookupPass){
+	if(mysqli_num_rows($lookup) == 1){
 
 		header("Location: functions.php?login=success"); /* Redirect browser */
 		exit();
