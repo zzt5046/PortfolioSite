@@ -6,7 +6,7 @@
 	$pass = $_POST['pass'];
 
 	$lookupPass = mysqli_query($conn, "SELECT password FROM phpaccess WHERE username='$user';");
-	echo "$lookupPass";
+	echo $lookupPass;
 	exit();
 	if($pass == $lookupPass){
 
