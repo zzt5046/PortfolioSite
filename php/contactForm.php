@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
 	$subject = $_POST['contactSubject'];
 	$msg = $_POST['contactMessage'];
 
-	$mailto = "zthomas2323@gmail.com";
+	$mailto = "zach@zachthomas.tech";
 	$headers = "From PortfolioSite: ".$email;
 	$txt = "You have received an email from ".$name.".\n\n".$msg;
 
