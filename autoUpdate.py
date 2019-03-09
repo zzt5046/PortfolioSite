@@ -3,7 +3,9 @@ import os
 import time
 import subprocess
 
-status = subprocess.check_output(['git', 'status'], shell=True).decode('utf-8')
+status = subprocess.Popen(['git', 'status'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+stdout,stderr = status.communicate()
+
 update = "./update.py"
 
-print(str(status))
+print(str(stdout.split()[0]))
