@@ -1,5 +1,7 @@
 ﻿<?php
 
+require_once('../PHPMailer-5.2.25/PHPMailerAutoload.php');
+
 // Replace this with your own email address
 $siteOwnersEmail = 'zthomas2323@gmail.com';
 
@@ -48,6 +50,22 @@ if($_POST) {
 
       //ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+
+      $phpmailer = new PHPMailer();
+      $phpmailer->isSMTP();
+      $phpmailer->SMTPAuth = true;
+      $phpmailer->SMTPSecure = 'ssl';
+      $phpmailer->Host = 'smtp.gmail.com';
+      $phpmailer->Port = '465';
+      $phpmailer->isHTML();
+      $phpmailer->Username = 'zttechmailer@gmail.com';
+      $phpmailer->Password = 'a6a6726v4d2!';
+      $phpmailer->SetFrom('no-reply@zachthomas.tech');
+      $phpmailer->Subject = 'From: '.$email;
+      $phpmailer->Body = $message;
+      $phpmailer->AddAddress('zthomas2323@gmail.com');
+
+      $phpmailer->Send();
 
 		if ($mail) { echo "OK"; }
       else { echo "Something went wrong. Please try again."; }
