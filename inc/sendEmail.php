@@ -13,14 +13,17 @@ if($_POST) {
 
    // Check Name
 	if (strlen($name) < 2) {
+		echo "Name error";
 		$error['name'] = "Please enter your name.";
 	}
 	// Check Email
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
+		echo "email error";
 		$error['email'] = "Please enter a valid email address.";
 	}
 	// Check Message
 	if (strlen($contact_message) < 1) {
+		echo "msg error";
 		$error['message'] = "Please enter your message. It should have at least 15 characters.";
 	}
    // Subject
