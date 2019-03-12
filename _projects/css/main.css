@@ -3,7 +3,7 @@ body{
 	background-size: cover;
 	background-repeat: repeat;
 	background-attachment: fixed;
-	overflow: auto;
+	overflow: hidden;
 	font-family: 'Vollkorn', sans-serif;
 }
 
@@ -42,6 +42,7 @@ body{
 	height: 20px;
 	color: white;
 	text-align: center;
+	font-size: 18px;
 }
 
 /*for testing purposes*/
