@@ -9,5 +9,13 @@ body{
 h1{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 72px;
-	/*color: white;*/
+	color: white;
+}
+
+#title_container{
+	width: 60%;
+	height: 90px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: gray;
 }
