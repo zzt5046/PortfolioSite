@@ -13,9 +13,13 @@ h1{
 }
 
 #title_container{
-	width: 60%;
+	width: 40%;
 	height: 90px;
+	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: gray;
+	border: 5;
+	border: 5px solid white;
+  	border-radius: 5px;
 }
