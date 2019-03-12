@@ -1,5 +1,6 @@
 body{
 	background: url(../img/bg.jpg);
+	background-size: auto;
 	background-repeat: repeat;
 	background-attachment: fixed;
 	overflow: scroll;
