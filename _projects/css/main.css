@@ -47,6 +47,11 @@ body{
 	border-top: 3px solid white;
 }
 
+#footer a:visited, a:hover, a:active{
+	color: black;
+	font-style: bold;
+}
+
 /*for testing purposes*/
 #filler{
 	height: 4000px;
