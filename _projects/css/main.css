@@ -1,4 +1,11 @@
-h1	{
+body{
+	background-image:url(img/bg.jpg);
+	background-repeat:repeat;
+	background-attachment:fixed;
+	overflow:scroll;
+}
+
+h1{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 48px;
 }
