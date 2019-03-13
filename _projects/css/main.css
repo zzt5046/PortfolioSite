@@ -4,7 +4,7 @@ body{
 	background-repeat: repeat;
 	background-attachment: fixed;
 	overflow: auto;
-	font-family: 'Vollkorn', sans-serif;
+	font-family: 'Muli', sans-serif;
 }
 
 #title{
@@ -44,7 +44,6 @@ body{
 	font-color: white;
 	text-align: center;
 	font-size: 18px;
-	border-top: 3px solid white;
 }
 
 #footer a:visited, a:hover, a:active{
