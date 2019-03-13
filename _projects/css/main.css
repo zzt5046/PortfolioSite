@@ -11,7 +11,10 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 72px;
 	color: white;
-	text-shadow: 3px 3px black;
+	color: black;
+  	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  	-webkit-text-stroke-width: 3px;
+  	-webkit-text-stroke-color: black;
 }
 
 #title_container{
