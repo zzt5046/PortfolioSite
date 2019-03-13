@@ -27,21 +27,22 @@ body{
 }
 
 #project_list{
-	width: 60%;
+	width: 64%;
+	height: 750px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 80px;
 	border: 5px solid black;
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+  	grid-gap: 10px;
 }
 
 #project_list_element{
 	height: 100px;
 	width: 200px;
-	padding: 20px;
 	display: inline-block;
 	border: 5px solid black;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #footer{
