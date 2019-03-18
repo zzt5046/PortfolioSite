@@ -66,6 +66,7 @@ if($_POST) {
       $phpmailer->AddAddress('zthomas2323@gmail.com');
 
       $phpmailer->Send();
+      $mail = true;
 
 		if ($mail) { echo "OK"; }
       else { echo "Something went wrong. Please try again."; }
