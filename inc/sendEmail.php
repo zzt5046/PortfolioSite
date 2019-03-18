@@ -1,6 +1,6 @@
 ﻿<?php
 
-require_once('../PHPMailer-5.2.25/PHPMailerAutoload.php');
+require_once('../../PHPMailer-5.2.25/PHPMailerAutoload.php');
 
 // Replace this with your own email address
 $siteOwnersEmail = 'zthomas2323@gmail.com';
@@ -51,7 +51,7 @@ if($_POST) {
       //ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-      $phpmailer = new PHPMailer();/
+      $phpmailer = new PHPMailer();
       $phpmailer->isSMTP();
       $phpmailer->SMTPAuth = true;
       $phpmailer->SMTPSecure = 'ssl';
