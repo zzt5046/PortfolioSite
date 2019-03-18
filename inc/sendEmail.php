@@ -49,7 +49,7 @@ if($_POST) {
    if (!$error) {
 
       //ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+      //$mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
       $phpmailer = new PHPMailer();
       $phpmailer->isSMTP();
