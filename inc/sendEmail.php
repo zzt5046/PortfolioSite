@@ -51,7 +51,7 @@ if($_POST) {
       //ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-      $phpmailer = new PHPMailer();
+      $phpmailer = new PHPMailer();/
       $phpmailer->isSMTP();
       $phpmailer->SMTPAuth = true;
       $phpmailer->SMTPSecure = 'ssl';
