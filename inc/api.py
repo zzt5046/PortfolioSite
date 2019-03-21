@@ -33,7 +33,7 @@ def viewQuery(col):
 	countrow = a.execute(sql)
 	data = a.fetchall()
 
-	return jsonify({countrow, data})
+	return data
 		
 @app.route("/dbinsert/", methods=['POST'])
 def insertQuery(fname, lname, uname):
