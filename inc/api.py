@@ -43,5 +43,7 @@ def insertQuery(fname, lname, uname):
 	sql = 'INSERT INTO api_users VALUES(NULL, fname, lname, uname);'
 	a.execute(sql)
 
+	return 'OK'
+
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=5000, debug=True)
