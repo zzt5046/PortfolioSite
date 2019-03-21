@@ -22,7 +22,7 @@ def rand(num):
 	
 @app.route("/dbview/<string:col>", methods=['GET'])
 def viewQuery(col):
-	conn = pymysql.connect(host='local', user='root', password='ziggymysql23', db=str('users'))
+	conn = pymysql.connect(host='localhost', user='root', password='ziggymysql23', db=str('users'))
 	a = conn.cursor()
 
 	if not col:
@@ -37,7 +37,7 @@ def viewQuery(col):
 		
 @app.route("/dbinsert/", methods=['POST'])
 def insertQuery(fname, lname, uname):
-	conn = pymysql.connect(host='local', user='root', password='ziggymysql23', db=str('users'))
+	conn = pymysql.connect(host='localhost', user='root', password='ziggymysql23', db=str('users'))
 	a = conn.cursor()
 
 	sql = 'INSERT INTO api_users VALUES(NULL, fname, lname, uname);'
