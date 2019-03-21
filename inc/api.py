@@ -20,7 +20,7 @@ def basicData():
 def rand(num):
 	return jsonify({"number:" : random.randint(1,num)})
 	
-@app.route("/dbview/", methods=['GET'])
+@app.route("/dbview/<string:col>", methods=['GET'])
 def viewQuery(col):
 	conn = pymysql.connect(host='local', user='root', password='ziggymysql23', db=str('users'))
 	a = conn.cursor()
