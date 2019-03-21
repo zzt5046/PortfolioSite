@@ -35,7 +35,7 @@ def viewQuery(col):
 
 	return data
 		
-@app.route("/dbinsert/", methods=['POST'])
+@app.route("/dbinsert/<string:fname>/<string:lname>/<string:uname>", methods=['POST'])
 def insertQuery(fname, lname, uname):
 	conn = pymysql.connect(host='localhost', user='root', password='ziggymysql23', db=str('users'))
 	a = conn.cursor()
