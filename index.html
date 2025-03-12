@@ -2,41 +2,6 @@
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-
-<style>
-	.body{
-		background-color: #313131 !important;
-	}
-	.header-local {
-		font-size: 65px !important;
-		font-weight: 700;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 100%;
-		margin-bottom: 60px !important;
-	}
-	.local-button {
-		font-size: 17px !important;
-		font-weight: 75 !important;
-		text-transform: none !important;
-		font-family: "Inconsolata", Arial, sans-serif !important;
-		background: #313131;
-		color: #FFFFFF !important;
-		display: inline-block;
-		letter-spacing: .3rem;
-		height: 5.4rem;
-		line-height: 5.4rem;
-		padding: 0 3rem;
-		margin: 0 .3rem 1.2rem 0;
-		text-decoration: none;
-		text-align: center;
-		white-space: nowrap;
-		border: none;
-	}
-	.local-button:hover{
-		background: #1f1f1f;
-	}
-</style>
 <head>
 
    <!--- basic page needs
@@ -54,13 +19,12 @@
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">
-   <link rel="stylesheet" href="css/style.css">  
+   <link rel="stylesheet" href="css/vendor.css">     
 
    <!-- script
    ================================================== -->   
-	<!-- <script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script> -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
    <!-- favicons
 	================================================== -->
@@ -77,22 +41,16 @@
    	<div class="intro-overlay"></div>	
 
    	<div class="intro-content">
-   		<div class="page-center">
-			<h5>Sorry,</h5>
-			<h1 class="header-local">Currently under construction.</h1>
+   		<div class="row">
 
-			<!-- <p class="intro-position">
-				<span>Software Developer</span>
-			</p> -->
+   			<div class="col-twelve">
 
-			<div class="col-twelve">
-				<a 	href="inc/resume.pdf"
-					download="Zach_Thomas_Resume"
-					class="local-button"
-					target="blank">
-					Download Resume
-				</a>
-			</div>    
+	   			<h5>Hello.</h5>
+	   			<h1>I'm Zach Thomas.</h1>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">About Me</a>
+	   		</div>  
+   		
    		</div>   		 		
    	</div> <!-- /intro-content --> 
 
@@ -101,7 +59,226 @@
          <li><a href="https://github.com/zzt5046"><i class="fa fa-github"></i></a></li>
       </ul> <!-- /intro-social -->      	
 
-   </section> <!-- /intro -->   
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="section-intro">
+		<h1>About Me</h1>
+
+			<p>
+				Dedicated software engineer with six years of experience in 
+				developing and enhancing full stack web applications. 
+				Comfortable working in agile environments, collaborating with team members,
+				gathering requirements, and supporting software reliability through testing 
+				and test automation. Experienced with Java, Kotlin, Spring Boot, and modern 
+				frontend frameworks like Vue.js and React.js, along with database concepts, 
+				migration, and management. Always eager to learn, improve, and contribute 
+				to building easy to use software.
+			</p>
+			  		
+			<div class="col-twelve">
+				<a href="inc/resume.pdf" title="Download CV" 
+					class="button button-primary"
+					target="blank">
+					Download Resume</a>
+   			</div>
+
+   	</div> <!-- /section-intro -->   		
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h1>Experience</h1>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Software Engineer</h3>
+	   					<p>APR 2019 - DEC 2024</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Versatile Credit</h4>
+						<ul class="resume-bullets">
+							<li>
+								Built several financing provider API integrations into existing financing apply and checkout platforms.
+							</li>
+							<li>
+								Tailored existing applications to accommodate dynamic, full-stack client requirements.
+							</li>
+							<li>
+								Documented past, present, and future application changes for records or client presentation.
+							</li>
+							<li>
+								Tested both legacy and new frontend and backend changes to ensure reliability and consistency.
+							</li>
+							<li>
+								Participated in requirements gathering and time estimation for priority work each sprint.
+							</li>
+						</ul>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Java Developer</h3>
+	   					<p>AUG 2018 - DEC 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Computer Aid Inc / Highmark Health</h4>
+						<ul class="resume-bullets">
+							<li>
+								Built required J-Unit test cases for existing and legacy applications to meet coverage standards.
+							</li>
+							<li>
+								Managed all code changes through IBM CA Harvest SCM and MyEclipse Blue.
+							</li>
+							<li>
+								Utilized tools such as Mockito and PowerMockito to circumvent obstacles in testing legacy code.
+							</li>
+							<li>
+								Collaborated with other contractors to distribute testing efforts efficiently.
+							</li>
+							<li>
+								Documented untestable or dead code for future reference or refactoring.
+							</li>
+						</ul>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Application Development Intern</h3>
+	   					<p>APR 2017 - AUG 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>PSU Auxiliary and Business Services</h4>
+						   <ul class="resume-bullets">
+							<li>
+								Utilized Twilio’s REST APIs to prototype a university-wide mass texting application.
+							</li>
+							<li>
+								Created new database queries to accommodate new requirements.
+							</li>
+							<li>
+								Created web applications and dynamic reports using ColdFusion, HTML, CSS, and SQL.
+							</li>
+							<li>
+								Modified an open source JavaScript widget for integration into a custom responsive website design.
+							</li>
+							<li>
+								Documented all methods and features of completed projects for future reference.
+							</li>
+						</ul>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+   			<h1>Education</h1>
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block"><!--block-->
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>The Pennsylvania State University</h3>
+	   					<p>2014 - 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>B.S. Information Sciences and Technology</h4>
+	   					<p>
+							Studied software development and planning, development life cycles, 
+							basic networking and computer science concepts, as well as 
+							working constantly in team environments.
+						</p>
+	   				</div><!--block-->
+	   			</div>
+
+	   			<div class="timeline-block"><!--block-->
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Minor - Security and Risk Analysis</h4>
+	   					<p>
+							Minored in Security and Risk Analysis. This deals with protecting 
+							personal and business assets through risk management. Risk management 
+							includes risk analysis, threat identification, risk control, decision 
+							making, emergency response, and intelligence analysis.
+						</p>
+	   				</div>
+
+	   			</div> <!--block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
 
    <div id="preloader"> 
     	<div id="loader"></div>
@@ -114,5 +291,4 @@
    <script src="js/main.js"></script>
 
 </body>
-
 </html>
