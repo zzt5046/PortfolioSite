@@ -1047,6 +1047,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
 }
+.about-me p{
+	display: block;
+	text-align: left; 
+}
 
 /**
  * responsive:
@@ -1062,7 +1066,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	}
 	.about-me p {
 		max-width: 80% !important;
-		text-align: justify !important;
 	}
 }
 @media only screen and (max-width:600px) {
