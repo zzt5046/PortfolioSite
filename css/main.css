@@ -2607,16 +2607,13 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 
-ul.dashed {
-	list-style-type: none;
-  }
+ul.resume-bullets {
   ul.dashed > li {
-	text-indent: -5px;
-	display: flex;
+	padding-left: 8px;
   }
   ul.dashed > li:before {
-	content: "-";
-	text-indent: -5px;
+	text-indent: -8px;
   }
+}
 
 /*# sourceMappingURL=main.css.map */
