@@ -1066,6 +1066,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	}
 	.about-me p {
 		max-width: 80% !important;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 @media only screen and (max-width:600px) {
