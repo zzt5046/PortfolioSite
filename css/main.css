@@ -1060,6 +1060,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	.section-intro h1 {
 		font-size: 3rem;
 	}
+	#aboutMe {
+		max-width: 80%;
+	}
 }
 @media only screen and (max-width:600px) {
 	.section-intro h1 {
